@@ -40,11 +40,13 @@ for (let i = 0; i < 5; i++) {
     $('.subject4').append($divQuestion)
 }    
 
+// Create div for final answer
+const $divFinalAnswer = $('<div>').addClass('final-answer');
+$('body').append($divFinalAnswer);
 
-// for (let i = 0; i < 6; i++) {
-//     const $divSubject = $('<div>').addClass('subject').attr('id', 'subject' + [i]);
-//     $($divCategories).append($divSubject)
-// 
+// Create div for scoreboard
+const $divScoreboard = $('<div>').addClass('scoreboard');
+$('body').append($divScoreboard);
 
 
 
