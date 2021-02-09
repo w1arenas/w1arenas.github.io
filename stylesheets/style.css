@@ -152,13 +152,13 @@ background-color: black;
     background: #303030;
 } 
 
-.modal {
+#modal {
     display: none;
     position: fixed;
     /* places modal on top of the page */
     z-index: 1;
-    left: 0;
     top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     /* elevator if model is too small for text */
@@ -167,26 +167,43 @@ background-color: black;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
-    background-color: #f4f4f4;
+#modal-textbox {
     /* first index controls how far it goes down. second index is left and right margins (centers it on the horizontal) */
     margin: 20% 30px;
-    padding: 20px;
+    padding: 2%;
+    line-height: 120%;
     width: 70%;
+    border-radius: 5px;
     background-color: #0015A0;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-shadow: 5px 5px black ;
     font-size: 40px;
     text-transform: uppercase;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }    
 
-.closeBtn {
+#modal-footer {
+    text-align: right;
+    font-size: small;
+}
+
+#modal-buttons {
+    padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+}
+
+/* .closeBtn {
     color: #c0c0c0;
     float: right;
     font-size: 30px;
-}
+} */
 
 
 

@@ -18,13 +18,15 @@
 
 <!-- button for pop up -->
 
-<button id="modalBtn" class='button'>Click here</button>
+<button class='modal-buttons' id="openModal">Open modal</button>
 
-<div class="modal" id="simpleModal" >
-    <div class="modal-content">
+<div class="modal" id="modal" >
+    <div class="modal-content" id="modal-textbox">
+        <p>Jeoparty question.</p>
         <!-- places an x to close modal -->
-        <!-- <span class="closeBtn">&times;</span> -->
-        <p>Hello...I am a modal</p>
+        <div id="modal-footer">
+            <button class='modal-buttons' id="close" href="#">Close</button>
+        </div>
     </div>
 </div>
 

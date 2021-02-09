@@ -329,29 +329,44 @@ const answerE5Options = [
 ////////// //create click event
 
 
+// grab button
+const $openBtn = $('#openModal');
+
+// grab modal element
+const $modal = $('#modal');
+
+// grab close button
+const $closeBtn = $('#close');
 
 
 
-//get modal element
-let modal = document.getElementById('simpleModal');
+// event handlers
 
-//get open modal button
-let modalBtn = document.getElementById('modalBtn');
-
-//Listen for click
-modalBtn.addEventListener('click', openModal)
-
-// Function to open modal
-function openModal() {
-    modal.style.display = 'block'
+const openModal = () => {
+    $modal.css('display', 'block')
 }
 
+const closeModal = () => {
+    $modal.css('display', 'none')
+}
+
+// event listeners
+
+$openBtn.on('click', openModal);
+
+$closeBtn.on('click', closeModal);
 
 
-const $questionA1 = $('#questionA1');
-$questionA1.on('click', () => {
-    console.log('div was clicked')
-});
+
+
+
+
+
+// const $questionA1 = $('#questionA1');
+// $questionA1.on('click', () => {
+//     openModal()
+// });
+
 
 
 //console.log($questionA1)
