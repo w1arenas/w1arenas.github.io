@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.title {
+.pageHeader {
     height: 115px;
 }
 
@@ -136,6 +136,61 @@ background-color: black;
     display: flex;
     align-items: center;
 }
+
+/* Model functionality */
+
+
+.button {
+    background: coral;
+
+    padding: 1em 2em;
+    color: #f0f0f0;
+    border: 0;
+}
+
+.button:hover {
+    background: #303030;
+} 
+
+.modal {
+    display: none;
+    position: fixed;
+    /* places modal on top of the page */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* elevator if model is too small for text */
+    overflow: auto;
+    /* last index is opacity. Darkens the background */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    /* first index controls how far it goes down. second index is left and right margins (centers it on the horizontal) */
+    margin: 20% 30px;
+    padding: 20px;
+    width: 70%;
+    background-color: #0015A0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 5px 5px black ;
+    font-size: 40px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.3);
+}    
+
+.closeBtn {
+    color: #c0c0c0;
+    float: right;
+    font-size: 30px;
+}
+
+
+
+
 
 
 

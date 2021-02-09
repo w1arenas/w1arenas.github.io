@@ -326,14 +326,34 @@ const answerE5Options = [
 
 ///////////////////////// Functionality ///////////////////////
 
-//create click event
+////////// //create click event
 
-console.log('listening')
+
+
+
+
+//get modal element
+let modal = document.getElementById('simpleModal');
+
+//get open modal button
+let modalBtn = document.getElementById('modalBtn');
+
+//Listen for click
+modalBtn.addEventListener('click', openModal)
+
+// Function to open modal
+function openModal() {
+    modal.style.display = 'block'
+}
+
+
 
 const $questionA1 = $('#questionA1');
 $questionA1.on('click', () => {
     console.log('div was clicked')
 });
+
+
 //console.log($questionA1)
 
 })
