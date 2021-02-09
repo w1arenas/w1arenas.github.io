@@ -330,7 +330,7 @@ const answerE5Options = [
 
 
 // grab button
-const $openBtn = $('#openModal');
+const $openBtn = $('#questionA1');
 
 // grab modal element
 const $modal = $('#modal');
