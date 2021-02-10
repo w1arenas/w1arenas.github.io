@@ -326,11 +326,10 @@ const answerE5Options = [
 
 ///////////////////////// Functionality ///////////////////////
 
-////////// //create click event
-
+//////////// Modals
 
 // grab button
-const $openBtn = $('#questionA1');
+const $openBtn = $('#openModal');
 
 // grab modal element
 const $modal = $('#modal');
@@ -338,10 +337,7 @@ const $modal = $('#modal');
 // grab close button
 const $closeBtn = $('#close');
 
-
-
 // event handlers
-
 const openModal = () => {
     $modal.css('display', 'block')
 }
@@ -351,24 +347,21 @@ const closeModal = () => {
 }
 
 // event listeners
-
 $openBtn.on('click', openModal);
-
 $closeBtn.on('click', closeModal);
 
+//////////// Grid 
+
+//Sets up listener for each square
+const squareClicked = (event) => {
+    const id = event.target.id
+    console.log(id)
+}
+$('.question').on('click', squareClicked)
 
 
 
 
 
-
-// const $questionA1 = $('#questionA1');
-// $questionA1.on('click', () => {
-//     openModal()
-// });
-
-
-
-//console.log($questionA1)
 
 })
