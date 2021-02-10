@@ -161,7 +161,7 @@ console.log(arrayForModal)
 console.log('************* Target an item in the array *******************')
 
 console.log(arrayForModal[2])
-
+ 
 
 ///////////////////////// Functionality ///////////////////////
 
