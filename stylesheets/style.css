@@ -18,6 +18,11 @@ body {
     flex-direction: column; 
 }
 
+.formatDiv {
+    display: flex;
+    flex-direction: row;
+}
+
 .container {
 display: flex;
 flex-direction: row;
@@ -25,7 +30,23 @@ flex-wrap: nowrap;
 background-color: black;
 }
 
+h3 {
+    color: yellow;
+    font-size: 14px; 
+    display: inline;
+}
 
+ul {
+    display: inline;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    display: inline;
+
+}
 
 .subject0 {
     display: flex;
@@ -152,7 +173,7 @@ background-color: black;
     background: #303030;
 } 
 
-#modal {
+.modal {
     display: none;
     position: fixed;
     /* places modal on top of the page */
@@ -171,7 +192,7 @@ background-color: black;
     /* first index controls how far it goes down. second index is left and right margins (centers it on the horizontal) */
     margin: 20% 30px;
     padding: 2%;
-    line-height: 120%;
+    /* line-height: 120%; */
     width: 70%;
     border-radius: 5px;
     background-color: #0015A0;
@@ -181,6 +202,10 @@ background-color: black;
     font-size: 40px;
     text-transform: uppercase;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+
+
 }    
 
 #modal-footer {
@@ -188,7 +213,7 @@ background-color: black;
     font-size: small;
 }
 
-#modal-buttons {
+.modal-buttons {
     padding: 14px 18px;
 	background-color: #677996;
 	border: none;
