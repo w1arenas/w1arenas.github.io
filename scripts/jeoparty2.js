@@ -1,4 +1,3 @@
-
 ///////////////////////////// Look and feel ///////////////////////////
 // ***** Classes and ID's assignments to divs ******
 
@@ -141,43 +140,189 @@ $(() => {
         {id: '4.5', answer: 'Closest star to the sun.', question: 'c', value: 500, option1: 'a: ', q1: "a: What is Barnard's Star?", option2: 'b: ', q2: 'b: What is Alpha Centauri A?', option3: 'c: ', q3: 'c: What is Proxima Centauri.'}
     ]
     
-
-    //////////// Modals 02 //////////////////
-
-
-
-
+    ///////////////////////// Functionality ///////////////////////
+    
+    
+    
+    
+    
+    //////////// Modals
+    
+    // grab elements: open button, modal, and close button
+    
+    
+    
+    // const $openBtn = $('#openModal');
+    // const $modal = $('.modal');
+    // const $closeBtn = $('#close');
+    
+    
+    // ///////////// Event handlers
+    
+    // const openModal = () => {
+    //     $modal.css('display', 'block')
+    // }
+    
+    // const closeModal = () => {
+    //     $modal.css('display', 'none')
+    // }
+    
+    // // event listeners
+    // $openBtn.on('click', openModal);
+    // $closeBtn.on('click', closeModal);
+    
+    // //////////// Grid 
+    
+    // //Sets up listener for each square
+    // // const squareClicked = (event) => {
+    // //     const id = event.target.id
+    // //     openModal()
+    // //     console.log("This is the " + id)
+    // // }
+    // // $('.question').on('click', squareClicked)
+    
+    // // ********** Modal setup ***********
+    
+    // const clickSquare01 = document.getElementById("0.1");
+    // clickSquare01.addEventListener('click', openModal)
+    
+    // console.log('*********** Modal Data *********************')
+    // const modalData = data.filter(element => element.id === '0.1');
+    // console.log(modalData)
+    
+    // console.log('************* Object for modal *******************')
+    // const objectForModal = modalData.find(modalData => modalData.id === '0.1')
+    // console.log(objectForModal)
+    // console.log('************* Array for modal *******************')
+    // const arrayForModal = Object.values(objectForModal);
+    // console.log(arrayForModal)
+    
+    // console.log('************* Target an item in the array *******************')
+    
+    // //console.log(arrayForModal[8])
+     
+    // const $answer = $('<h3>').text(arrayForModal[1])
+    // $('#modal-textbox').append($answer)
+    
+    // // const $ul = $('<ul>')
+    // // $('#modal-textbox').append($ul)
+    
+    // const $liOption1 = $('<li>').text(arrayForModal[5])
+    // $('#modal-textbox').append($liOption1)
+    // const $liOption2 = $('<li>').text(arrayForModal[7])
+    // $('#modal-textbox').append($liOption2)
+    // const $liOption3 = $('<li>').text(arrayForModal[9])
+    // $('#modal-textbox').append($liOption3)
+    
+    
+    
+    
+    
+    //***********************************    square 0.1     *************************//
+    const $modal01 = $('#modal01');
+        
+        const openModal01 = () => {
+            $modal01.css('display', 'block')
+        }
+        
+        const closeModal01 = () => {
+            $modal01.css('display', 'none')
+        }
+        
+        const clickSquare01 = document.getElementById("0.1");
+        clickSquare01.addEventListener('click', openModal01)
+       
+        
+        console.log('************* Object for modal *******************')
+        const objectForModal01 = data.find(data => data.id === '0.1')
+    
+        const $answer01 = $('<h3>').text(objectForModal01.answer)
+        $('#modal-textbox01').append($answer01)
+        
+        const $liOption011 = $('<li>').text(objectForModal01.q1)
+        $('#modal-textbox01').append($liOption011)
+        const $liOption012 = $('<li>').text(objectForModal01.q2)
+        $('#modal-textbox01').append($liOption012)
+        const $liOption013 = $('<li>').text(objectForModal01.q3)
+        $('#modal-textbox01').append($liOption013)
+    
+        const givenAnswer01 = []
+        //console.log(givenAnswer01)
+        const renderAnswer = () => {
+            $('ul').empty()
+            givenAnswer01.forEach((item) => {
+                $('ul').append('<li>' + item + '</li>')
+            })
+    
+            // //strike through a list item
+            // $('li').on('click', (event) => {
+            //     $(event.currentTarget).css('text-decoration', 'line-through')
+            // })
+        }
+    
+        $('form').on('submit', (event) => {
+            const $inputValue01 = $('#input-box01').val()
+            givenAnswer01.push($inputValue01)
+            event.preventDefault()
+            $(event.currentTarget).trigger('reset')
+    
+            renderAnswer()
+            //console.log(givenAnswer01)
+            //console.log(objectForModal01.question)
+    
+        if (givenAnswer01[0] === objectForModal01.question) {
+            console.log('YES')
+            alert('Correct!')
+        }else{alert('Sorry! The right answer is ' + objectForModal01.question)}
+    
+    
+        })
+    
+        //console.log(givenAnswer01)
+        //console.log(objectForModal02.question)
+    // if (givenAnswer01 === objectForModal01.question) {
+    //     console.log("YES")
+    // }else {'NO'}
+    
+    
+    
+    
+    
+    //***********************************    square 0.2     ********** ***************//
     const $modal02 = $('#modal02');
+        
+        const openModal02 = () => {
+            $modal02.css('display', 'block')
+        }
+        
+        const closeModal02 = () => {
+            $modal02.css('display', 'none')
+        }
+        
+        const clickSquare02 = document.getElementById("0.2");
+        clickSquare02.addEventListener('click', openModal02)
+        
+        console.log('************* Object for modal *******************')
+        const objectForModal02 = data.find(data => data.id === '0.2')
+        //console.log(objectForModal02.q1)
     
-    const openModal02 = () => {
-        $modal02.css('display', 'block')
-    }
+        const $answer02 = $('<h3>').text(objectForModal02.answer)
+        $('#modal-textbox02').append($answer02)
+        
+        const $liOption021 = $('<li>').text(objectForModal02.q1)
+        $('#modal-textbox02').append($liOption021)
+        const $liOption022 = $('<li>').text(objectForModal02.q2)
+        $('#modal-textbox02').append($liOption022)
+        const $liOption023 = $('<li>').text(objectForModal02.q3)
+        $('#modal-textbox02').append($liOption023)
     
-    const closeModal02 = () => {
-        $modal.css('display', 'none')
-    }
     
-    const clickSquare02 = document.getElementById("0.2");
-    clickSquare02.addEventListener('click', openModal02)
     
-    console.log('************* Object for modal *******************')
-    const objectForModal02 = data.find(data => data.id === '0.2')
-    //console.log(objectForModal02.q1)
-
-
-    const $answer02 = $('<h3>').text(objectForModal02.answer)
-    $('#modal-textbox02').append($answer02)
     
-    const $liOption021 = $('<li>').text(objectForModal02.q1)
-    $('#modal-textbox02').append($liOption021)
-    const $liOption022 = $('<li>').text(objectForModal02.q2)
-    $('#modal-textbox02').append($liOption022)
-    const $liOption023 = $('<li>').text(objectForModal02.q3)
-    $('#modal-textbox02').append($liOption023)
     
-
     
-
-
+    
+    
+        
     
     })
