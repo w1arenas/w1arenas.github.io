@@ -247,7 +247,47 @@ const $modal01 = $('#modal01');
     const $liOption013 = $('<li>').text(objectForModal01.q3)
     $('#modal-textbox01').append($liOption013)
 
-    
+    const givenAnswer01 = []
+    //console.log(givenAnswer01)
+    const renderAnswer = () => {
+        $('ul').empty()
+        givenAnswer01.forEach((item) => {
+            $('ul').append('<li>' + item + '</li>')
+        })
+
+        // //strike through a list item
+        // $('li').on('click', (event) => {
+        //     $(event.currentTarget).css('text-decoration', 'line-through')
+        // })
+    }
+
+    $('form').on('submit', (event) => {
+        const $inputValue01 = $('#input-box01').val()
+        givenAnswer01.push($inputValue01)
+        event.preventDefault()
+        $(event.currentTarget).trigger('reset')
+
+        renderAnswer()
+        //console.log(givenAnswer01)
+        //console.log(objectForModal01.question)
+
+    if (givenAnswer01[0] === objectForModal01.question) {
+        console.log('YES')
+        alert('Correct!')
+    }else{alert('Sorry! The right answer is ' + objectForModal01.question)}
+
+
+    })
+
+    //console.log(givenAnswer01)
+    //console.log(objectForModal02.question)
+// if (givenAnswer01 === objectForModal01.question) {
+//     console.log("YES")
+// }else {'NO'}
+
+
+
+
 
 //***********************************    square 0.2     ********** ***************//
 const $modal02 = $('#modal02');
@@ -277,5 +317,13 @@ const $modal02 = $('#modal02');
     const $liOption023 = $('<li>').text(objectForModal02.q3)
     $('#modal-textbox02').append($liOption023)
 
+
+
+
+
+
+
+
+    
 
 })
