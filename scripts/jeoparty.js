@@ -67,26 +67,21 @@ for (let i = 0; i < 6; i++) {
 
 //////////////////////////////////  FUNCTIONALITY  ////////////////////////////////
 
-
+//let counter = 0
 $('.question').on('click', (event) => {
     // console.log(data[event.currentTarget.id])
     const $squareData = (data[event.currentTarget.id])
     console.log(event.currentTarget.id)
     
-    
     event.currentTarget.style.visibility = 'hidden'
-    
-    // const candidateIdToHide = "#" + event.currentTarget.id
-    // //css('display', 'none')
-    // console.log(candidateIdToHide)
-
-    // const $idToHide = $("candidateIdToHide");
 
 
 
-    
+    counter = counter++
+    console.log(counter)
+ 
 
-    
+
     const $locateAnswer = ($squareData.answer)
     // console.log($locateAnswer)
     const postAnswerToModal = $('<h3>').text($locateAnswer)
@@ -98,7 +93,6 @@ $('.question').on('click', (event) => {
     const $postQ1ToModal = $('<li>').text($locateQuestion1)
     const $postQ2ToModal = $('<li>').text($locateQuestion2)
     const $postQ3ToModal = $('<li>').text($locateQuestion3)
-
 
     $postQ1ToModal.on('click', (event) =>  {
         
@@ -154,13 +148,15 @@ $('.question').on('click', (event) => {
 
 const $modal = $('#modal');
     
-const openModal = () => {
+const openModal = (event) => {
     $modal.css('display', 'block')
     //console.log('clicked')
+
 }
 
 const closeModal = () => {
     $modal.css('display', 'none')
+    
 }
 
 
