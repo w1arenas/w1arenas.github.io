@@ -42,6 +42,7 @@ body {
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
+justify-self: center;
 background-color: black;
 }
 
@@ -56,17 +57,17 @@ background-color: black;
 h3 {
     text-align: center;
     color: yellow;
-    font-size: 40px; 
+    font-size: 60px; 
 
 }
 
 li {
-    margin: 0px 100px;
+    margin: 20px 100px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 li:hover {
@@ -168,12 +169,13 @@ question:hover {
 .scoreboard {
     color: yellow;
     font-family: 'Anton', sans-serif;
-    font-size: 36px; 
+    font-size: 60px; 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-/* Model functionality */
+/* Modal functionality */
 
 
 .button {
@@ -201,6 +203,8 @@ question:hover {
     overflow: auto;
     /* last index is opacity. Darkens the background */
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -210,22 +214,21 @@ question:hover {
     padding: 2%;
     /* line-height: 120%; */
     width: 70%;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #0015A0;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-shadow: 5px 5px black ;
     font-size: 40px;
-    text-transform: uppercase;
+    text-transform: none;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+
 
 }    
 
-#modal-footer {
-    text-align: right;
-    font-size: small;
-}
-
+/* 
 .modal-buttons {
     padding: 14px 18px;
 	background-color: #677996;
@@ -235,7 +238,7 @@ question:hover {
 	color: white;
 	font-family: 'Arial';
 	cursor: pointer;
-}
+} */
 
 /* **************************** square 0.1 ******************************  */
 .modal {
@@ -325,12 +328,6 @@ question:hover {
 
 }    
 
-
-/* .closeBtn {
-    color: #c0c0c0;
-    float: right;
-    font-size: 30px;
-} */
 
 
 
