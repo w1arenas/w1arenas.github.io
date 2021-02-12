@@ -1,4 +1,5 @@
 * {
+    color: #0015A0;
     /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
@@ -20,9 +21,10 @@
 }
 
 body {
-
+    color: #0015A0;
     height: 100%;
-    width: 800px;
+    width: 100%;
+    margin-right: 80px;
     background-color: #0015A0;
     display: flex;
     justify-content: center;
@@ -81,9 +83,9 @@ li:hover {
     justify-content: center;
     background-color: black;
     height: 400px;
-    width: 19%;
-    margin: 5px;
-    margin-left: 10px;
+    width: 20%;
+    margin: 1px;
+    margin-left: 4px;
 
 }
 
@@ -93,8 +95,8 @@ li:hover {
     justify-content: center;
     background-color: black;
     height: 400px;
-    width: 19%;
-    margin: 5px;
+    width: 20%;
+    margin: 1px;
 
 }
 
@@ -104,8 +106,8 @@ li:hover {
     justify-content: center;
     background-color: black;
     height: 400px;
-    width: 19%;
-    margin: 5px;
+    width:20%;
+    margin: 1px;
 
 }
 
@@ -115,8 +117,8 @@ li:hover {
     justify-content: center;
     background-color: black;
     height: 400px;
-    width: 19%;
-    margin: 5px;
+    width: 20%;
+    margin: 1px;
 
 }
 
@@ -126,9 +128,9 @@ li:hover {
     justify-content: center;
     background-color: black;
     height: 400px;
-    width: 19%;
-    margin: 5px;
-    margin-right: 10px;
+    width: 20%;
+    margin: 1px;
+    margin-right: 4px;
 
 }   
 
@@ -167,12 +169,18 @@ question:hover {
 }                                   
 
 .scoreboard {
+    height: 100%;
+    width: 100%;
     color: yellow;
     font-family: 'Anton', sans-serif;
     font-size: 60px; 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#scoretotal {
+    color: yellow;
 }
 
 /* Modal functionality */

@@ -186,7 +186,7 @@ const data = {
 
     '0.4': {answer: 'Isabella', rightQuestion: 'a', value: 400, option1: 'a: ', q1: "a: What's the name of Walter's gorgeous granddaughter?", option2: 'b: ', q2: "b: What is the name of Walter's favorite TV actress?", option3: 'c: ', q3: "c: What is the name of Walter's first girlfriend?"},
     
-    '0.5': {answer: '35', rightQuestion: 'c', value: 500, option1: 'a: ', option1: 'a: ', q1: 'a: How many pushups can Walter do in one minute?', option2: 'b: ', q2: 'b: How many times has Walter clean a bathroom over his lifetime?', option3: 'c: ', q3: 'c: How long has Walter been married to Kimberly?'},
+    '0.5': {answer: '35', rightQuestion: 'c', value: 500, option1: 'a: ', option1: 'a: ', q1: 'a: How many pushups can Walter do in one minute?', option2: 'b: ', q2: 'b: How many times has Walter cleaned a bathroom over his lifetime?', option3: 'c: ', q3: 'c: How long has Walter been married to Kimberly?'},
 
     '1.1': {answer: 'The Capital of the United States.', rightQuestion: 'c', value: 100, option1: 'a: ', q1: 'a: What is Mexico?', option2: 'b: ', q2: 'b: What is Canada?', option3: 'c: ', q3: 'c: What is Washington D.C.?'},
 
