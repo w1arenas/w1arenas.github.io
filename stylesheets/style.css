@@ -45,6 +45,14 @@ flex-wrap: nowrap;
 background-color: black;
 }
 
+.scoreboard {
+    display: flex;
+    flex-direction: row; 
+    justify-content: ; 
+
+}
+
+
 h3 {
     text-align: center;
     color: yellow;

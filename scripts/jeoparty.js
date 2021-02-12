@@ -65,12 +65,113 @@ for (let i = 0; i < 6; i++) {
     $('.subject4').append($divQuestion);
 }
 
-console.log($('.question'))
+//console.log($('.question'))
 
 
 $('.question').on('click', (event) => {
-    console.log(data[event.currentTarget.id])
+    // console.log(data[event.currentTarget.id])
+    const $squareData = (data[event.currentTarget.id])
+    console.log(event.currentTarget.id)
+    const $locateAnswer = ($squareData.answer)
+    // console.log($locateAnswer)
+    const postAnswerToModal = $('<h3>').text($locateAnswer)
+    $('#modal-textbox').append(postAnswerToModal)
+    const $locateQuestion1 = ($squareData.q1)
+    const $locateQuestion2 = ($squareData.q2)
+    const $locateQuestion3 = ($squareData.q3)
+
+
+    const $postQ1ToModal = $('<li>').text($locateQuestion1)
+    const $postQ2ToModal = $('<li>').text($locateQuestion2)
+    const $postQ3ToModal = $('<li>').text($locateQuestion3)
+
+    $postQ1ToModal.on('click', (event) =>  {
+        console.log("This: " + $( event.currentTarget))
+
+        $(event.currentTarget)
+        //console.log($(event.currentTarget).disable css text()[0])
+        const $rightQuestion = ($squareData.rightQuestion)
+        //console.log($rightQuestion)
+        if ($rightQuestion === $(event.currentTarget).text()[0]) {
+            keepScore($squareData.value)
+            alert('Correct!')
+        } else {keepScore($squareData.value * -1)
+            alert('Sorry, the right answer is ' + $rightQuestion)
+        }
+
+        closeModal()
+        $('#modal-textbox').empty()
+
+    })
+
+    $postQ2ToModal.on('click', (event) =>  {
+        $(event.currentTarget)
+        //console.log($(event.currentTarget).text()[0])
+        const $rightQuestion = ($squareData.rightQuestion)
+        //console.log($rightQuestion)
+        if ($rightQuestion === $(event.currentTarget).text()[0]) {
+            keepScore($squareData.value)
+            alert('Correct!')
+        } else {keepScore($squareData.value * -1)
+            alert('Sorry, the right answer is ' + $rightQuestion)
+        }
+        closeModal()
+        $('#modal-textbox').empty()
+    })
+
+    $postQ3ToModal.on('click', (event) =>  {
+        $(event.currentTarget)
+        //console.log($(event.currentTarget).text()[0])
+        const $rightQuestion = ($squareData.rightQuestion)
+        //console.log($rightQuestion)
+        if ($rightQuestion === $(event.currentTarget).text()[0]) {
+            keepScore($squareData.value)
+            alert('Correct!')
+        } else {keepScore($squareData.value * -1)
+            alert('Sorry, the right answer is ' + $rightQuestion)
+        }
+        closeModal()
+        $('#modal-textbox').empty()
+    })
+
+    $('#modal-textbox').append($postQ1ToModal)
+    $('#modal-textbox').append($postQ2ToModal)
+    $('#modal-textbox').append($postQ3ToModal)
+
+    openModal()
+
+ 
 })
+
+
+
+    // const $divScoreboard = $('<div>').addClass('scoreboard');
+    // $('body').append($divScoreboard); 
+
+    // const $$divScoreboardText = $('<div>').addClass('score-text').text('Your Score: ' )
+    // $('.scoreboard').append($divScoreboard); 
+    
+    // const $divScoreboardTotal = $('div').addClass('scoreTotal').text(score);
+    // $('.scoreboard').append($divScoreboardTotal);   
+
+
+    let score = 0
+
+    let keepScore = (points) => {
+        score += points 
+        console.log("Inside score: " + score)
+        $('#scoretotal').text(score)
+    }
+ 
+console.log(score)
+
+// const $answer01 = $('<h3>').text(objectForModal01.answer)
+// $('#modal-textbox01').append($answer01)
+
+// launch correct modal
+
+
+
 
 // Create div and title for score
 // const $divScoreboard = $('<div>').addClass('scoreboard').text('Your Score:');
@@ -223,9 +324,6 @@ const data = {
 // const pointsArray = [0]
 
 
-//***********************************    square 0.1     *************************//
-
-
 const $modal = $('#modal');
     
     const openModal = () => {
@@ -237,48 +335,45 @@ const $modal = $('#modal');
         $modal.css('display', 'none')
     }
     
-
-    // const clickSquare01 = document.getElementById("0.1");
-    // clickSquare01.addEventListener('click', openModal01)
  
 
-    console.log('************* Object for modal *******************')
-    const objectForModal01 = data.find(data => data.id === '0.1')
+    // console.log('************* Object for modal *******************')
+    // const objectForModal01 = data.find(data => data.id === '0.1')
 
-    const $answer01 = $('<h3>').text(objectForModal01.answer)
-    $('#modal-textbox01').append($answer01)
+    // const $answer01 = $('<h3>').text(objectForModal01.answer)
+    // $('#modal-textbox01').append($answer01)
     
-    const $liOption011 = $('<li>').text(objectForModal01.q1)
-    $('#modal-textbox01').append($liOption011)
-    const $liOption012 = $('<li>').text(objectForModal01.q2)
-    $('#modal-textbox01').append($liOption012)
-    const $liOption013 = $('<li>').text(objectForModal01.q3)
-    $('#modal-textbox01').append($liOption013)
+    // const $liOption011 = $('<li>').text(objectForModal01.q1)
+    // $('#modal-textbox01').append($liOption011)
+    // const $liOption012 = $('<li>').text(objectForModal01.q2)
+    // $('#modal-textbox01').append($liOption012)
+    // const $liOption013 = $('<li>').text(objectForModal01.q3)
+    // $('#modal-textbox01').append($liOption013)
 
-    const givenAnswer01 = []
+    // const givenAnswer01 = []
 
-    const renderAnswer = () => {
+    // const renderAnswer = () => {
 
-        if (givenAnswer01[0] === objectForModal01.question) {
-            //console.log('YES')
-            alert('Correct!')
-            pointsArray.push(objectForModal01.value)
-            //console.log(objectForModal01.value)
-        }else{alert('Sorry! The right answer is ' + objectForModal01.question)
-            pointsArray.push(objectForModal01.value * -1)
-        }
-    }
+    //     if (givenAnswer01[0] === objectForModal01.question) {
+    //         //console.log('YES')
+    //         alert('Correct!')
+    //         pointsArray.push(objectForModal01.value)
+    //         //console.log(objectForModal01.value)
+    //     }else{alert('Sorry! The right answer is ' + objectForModal01.question)
+    //         pointsArray.push(objectForModal01.value * -1)
+    //     }
+    // }
 
-    $('form').on('submit', (event) => {
-        const $inputValue01 = $('#input-box01').val()
-        givenAnswer01.push($inputValue01)
-        event.closeModal01()
-        event.preventDefault()
-        $(event.currentTarget).trigger('reset')
+    // $('form').on('submit', (event) => {
+    //     const $inputValue01 = $('#input-box01').val()
+    //     givenAnswer01.push($inputValue01)
+    //     event.closeModal01()
+    //     event.preventDefault()
+    //     $(event.currentTarget).trigger('reset')
 
-        renderAnswer()
+    //     renderAnswer()
 
-    })
+    // })
 
 
 
@@ -292,7 +387,6 @@ const $modal = $('#modal');
 //     })
 //  console.log(sumOfScores)
 
-//  const $divScoreboard = $('<div>').addClass('scoreboard').text('Your Score: ' + sumOfScores);
-//  $('body').append($divScoreboard);  
+ 
 
 })
