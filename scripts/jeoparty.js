@@ -72,7 +72,7 @@ for (let i = 0; i < 6; i++) {
 $('.question').on('click', (event) => {
     // console.log(data[event.currentTarget.id])
     const $squareData = (data[event.currentTarget.id])
-    console.log(event.currentTarget.id)
+    //console.log(event.currentTarget.id)
     
     event.currentTarget.style.visibility = 'hidden'
 
@@ -141,7 +141,8 @@ $('.question').on('click', (event) => {
     let score = 0
 
     let keepScore = (points) => {
-        score += points 
+        score = score + points 
+        //console.log(score)
         $('#scoretotal').text(score)
     }
  

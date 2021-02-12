@@ -220,23 +220,8 @@ question:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
-
-
 }    
 
-/* 
-.modal-buttons {
-    padding: 14px 18px;
-	background-color: #677996;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	color: white;
-	font-family: 'Arial';
-	cursor: pointer;
-} */
-
-/* **************************** square 0.1 ******************************  */
 .modal {
     display: none;
     position: fixed;
@@ -285,44 +270,6 @@ question:hover {
     align-self: flex-end;
 }
 
-#inputs01 {
-    display: flex;
-    align-items: flex-end;
-}
-
-/* **************************** square 0.2 ******************************  */
-.modal02 {
-    display: none;
-    position: fixed;
-    /* places modal on top of the page */
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* elevator if model is too small for text */
-    overflow: auto;
-    /* last index is opacity. Darkens the background */
-    background-color: rgba(0, 0, 0, 0.5);
-    
-}
-
-#modal-textbox02 {
-    /* first index controls how far it goes down. second index is left and right margins (centers it on the horizontal) */
-    margin: 20% 30px;
-    padding: 2%;
-    /* line-height: 120%; */
-    width: 70%;
-    border-radius: 5px;
-    background-color: #0015A0;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-shadow: 5px 5px black ;
-    font-size: 40px;
-    text-transform: uppercase;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-
-}    
 
 
 
