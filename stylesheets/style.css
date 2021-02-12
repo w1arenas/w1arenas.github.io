@@ -48,7 +48,7 @@ background-color: black;
 .scoreboard {
     display: flex;
     flex-direction: row; 
-    justify-content: ; 
+    justify-content: center;
 
 }
 
@@ -67,6 +67,11 @@ li {
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+li:hover {
+    color: rgb(235, 235, 107);
+    pointer-events: auto;
 }
 
 .subject0 {
@@ -126,6 +131,11 @@ li {
 
 }   
 
+question:hover {
+    color: orange;
+    pointer-events: auto;
+}
+
 .question {
     display: flex;
     justify-content: center;
@@ -140,17 +150,6 @@ li {
     margin: 5px;
     margin-right: 10px;   
 }
-
-.final-answer {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    height: 50px;
-    width: 99%;
-    margin: 5px;
-}
-
-
 
 .category {
     background-color: #0015A0;

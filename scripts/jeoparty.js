@@ -67,20 +67,13 @@ for (let i = 0; i < 6; i++) {
 
 //////////////////////////////////  FUNCTIONALITY  ////////////////////////////////
 
-//let counter = 0
+
 $('.question').on('click', (event) => {
     // console.log(data[event.currentTarget.id])
     const $squareData = (data[event.currentTarget.id])
     console.log(event.currentTarget.id)
     
     event.currentTarget.style.visibility = 'hidden'
-
-
-
-    counter = counter++
-    console.log(counter)
- 
-
 
     const $locateAnswer = ($squareData.answer)
     // console.log($locateAnswer)
@@ -148,15 +141,13 @@ $('.question').on('click', (event) => {
 
 const $modal = $('#modal');
     
-const openModal = (event) => {
+const openModal = () => {
     $modal.css('display', 'block')
     //console.log('clicked')
-
 }
 
 const closeModal = () => {
     $modal.css('display', 'none')
-    
 }
 
 
