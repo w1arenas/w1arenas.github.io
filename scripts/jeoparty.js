@@ -72,6 +72,21 @@ $('.question').on('click', (event) => {
     // console.log(data[event.currentTarget.id])
     const $squareData = (data[event.currentTarget.id])
     console.log(event.currentTarget.id)
+    
+    
+    event.currentTarget.style.visibility = 'hidden'
+    
+    // const candidateIdToHide = "#" + event.currentTarget.id
+    // //css('display', 'none')
+    // console.log(candidateIdToHide)
+
+    // const $idToHide = $("candidateIdToHide");
+
+
+
+    
+
+    
     const $locateAnswer = ($squareData.answer)
     // console.log($locateAnswer)
     const postAnswerToModal = $('<h3>').text($locateAnswer)
@@ -84,11 +99,10 @@ $('.question').on('click', (event) => {
     const $postQ2ToModal = $('<li>').text($locateQuestion2)
     const $postQ3ToModal = $('<li>').text($locateQuestion3)
 
-    $postQ1ToModal.on('click', (event) =>  {
-        console.log("This: " + $( event.currentTarget))
 
-        $(event.currentTarget)
-        //console.log($(event.currentTarget).disable css text()[0])
+    $postQ1ToModal.on('click', (event) =>  {
+        
+        console.log($(event.currentTarget.id))
         const $rightQuestion = ($squareData.rightQuestion)
         //console.log($rightQuestion)
         if ($rightQuestion === $(event.currentTarget).text()[0]) {
@@ -97,7 +111,6 @@ $('.question').on('click', (event) => {
         } else {keepScore($squareData.value * -1)
             alert('Sorry, the right answer is ' + $rightQuestion)
         }
-
         closeModal()
         $('#modal-textbox').empty()
     })
@@ -139,34 +152,26 @@ $('.question').on('click', (event) => {
     openModal()
 })
 
+const $modal = $('#modal');
+    
+const openModal = () => {
+    $modal.css('display', 'block')
+    //console.log('clicked')
+}
 
+const closeModal = () => {
+    $modal.css('display', 'none')
+}
 
 
     let score = 0
 
     let keepScore = (points) => {
         score += points 
-        //console.log("Inside score: " + score)
         $('#scoretotal').text(score)
     }
  
 
-
-// const $answer01 = $('<h3>').text(objectForModal01.answer)
-// $('#modal-textbox01').append($answer01)
-
-// launch correct modal
-
-
-
-
-// Create div and title for score
-// const $divScoreboard = $('<div>').addClass('scoreboard').text('Your Score:');
-// $('body').append($divScoreboard);
-
-// // Create div for scoreboard
-// const $divScoreboard = $('<div>').addClass('scoreboard');
-// $('body').append($divScoreboard);
 
 // Assign categories
 $('#category0').text('All about Walter');
@@ -235,30 +240,6 @@ const data = {
     '4.4': {answer: 'No longer a planet.', rightQuestion: 'a', value: 400, option1: 'a: ', q1: 'a: What is Pluto?', option2: 'b: ', q2: 'b: What is the Moon?', option3: 'c: ', q3: 'c: What is Neptune?'},
 
     '4.5': {answer: 'Closest star to the sun.', rightQuestion: 'c', value: 500, option1: 'a: ', q1: "a: What is Barnard's Star?", option2: 'b: ', q2: 'b: What is Alpha Centauri A?', option3: 'c: ', q3: 'c: What is Proxima Centauri.'}
+
 }
-
-
-const $modal = $('#modal');
-    
-    const openModal = () => {
-        $modal.css('display', 'block')
-        console.log('clicked')
-    }
-    
-    const closeModal = () => {
-        $modal.css('display', 'none')
-    }
-    
-    
-///////////////////// Scoreboard /////////////////////////
-
- 
-
-//     const sumOfScores = pointsArray.reduce(function(a, b){
-//         return a + b;
-//     })
-//  console.log(sumOfScores)
-
- 
-
 })
