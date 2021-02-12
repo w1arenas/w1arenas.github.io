@@ -67,6 +67,7 @@ for (let i = 0; i < 6; i++) {
 
 //////////////////////////////////  FUNCTIONALITY  ////////////////////////////////
 
+// ************************* Event listeners *************************
 
 $('.question').on('click', (event) => {
     // console.log(data[event.currentTarget.id])
@@ -86,6 +87,9 @@ $('.question').on('click', (event) => {
     const $postQ1ToModal = $('<li>').text($locateQuestion1)
     const $postQ2ToModal = $('<li>').text($locateQuestion2)
     const $postQ3ToModal = $('<li>').text($locateQuestion3)
+
+
+    // **************** Question and answer logic *********************
 
     $postQ1ToModal.on('click', (event) =>  {
         
@@ -132,6 +136,17 @@ $('.question').on('click', (event) => {
         $('#modal-textbox').empty()
     })
 
+//***********************  Scoreboard logic ***********************
+
+    let score = 0
+
+    let keepScore = (points) => {
+        score += points 
+        $('#scoretotal').text(score)
+    }
+ 
+// ************************** Modal logic ***************************
+
     $('#modal-textbox').append($postQ1ToModal)
     $('#modal-textbox').append($postQ2ToModal)
     $('#modal-textbox').append($postQ3ToModal)
@@ -150,16 +165,6 @@ const closeModal = () => {
     $modal.css('display', 'none')
 }
 
-
-    let score = 0
-
-    let keepScore = (points) => {
-        score += points 
-        $('#scoretotal').text(score)
-    }
- 
-
-
 // Assign categories
 $('#category0').text('All about Walter');
 $('#category1').text('World Capitals');
@@ -174,8 +179,7 @@ $('.question3').text('$300');
 $('.question4').text('$400');
 $('.question5').text('$500');
 
-///////////////////////////    Data   /////////////////////////
-
+// ****************************   Data   *****************************
 
 const data = {
     '0.1': {answer: 'Kimberly', rightQuestion: 'c', value: 100, option1: 'a: ', q1: "a: Who is Walter's long-lost cousin?", option2: 'b: ', q2: "b: What is the name of Walter’s favorite TV actress?", option3: 'c: ', q3: "c: Who is Walter’s wife and love of his life?"},
