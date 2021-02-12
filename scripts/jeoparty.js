@@ -216,26 +216,25 @@ const data = {
 
 	'2.5': {answer: 'Creatures that pulled the carriages at Hogwarts.', rightQuestion: 'c', value: 500, option1: 'a: ', q1: 'a: What are manticores?', option2: 'b: ', q2: 'b: What are hippogriffs?', option3: 'c: ', q3: 'c: What are thestrals?'},
 
-// 	{id: '3.1', answer: 'What CSS stands for.', question: 'c', value: 100, option1: 'a: ', q1: 'a: What is Colorful Style Sheets?', option2: 'b: ', q2: 'b: What is Computer Style Sheets?', option3: 'c: ', q3: 'c: What is Cascading Style Sheets.'},
+    '3.1': {answer: 'What CSS stands for.', rightQuestion: 'c', value: 100, option1: 'a: ', q1: 'a: What is Colorful Style Sheets?', option2: 'b: ', q2: 'b: What is Computer Style Sheets?', option3: 'c: ', q3: 'c: What is Cascading Style Sheets.'},
 
-// 	{id: '3.2', answer: 'The correct CSS syntax.', question: 'b', value: 200, option1: 'a: ', q1: 'a: {body:color=black};', option2: 'b: ', q2: 'b: body{color:black};', option3: 'c: ', q3: 'c: body:color(black);'},
+    '3.2': {answer: 'The correct CSS syntax.', rightQuestion: 'b', value: 200, option1: 'a: ', q1: 'a: {body:color=black};', option2: 'b: ', q2: 'b: body{color:black};', option3: 'c: ', q3: 'c: body:color(black);'},
 
-// 	{id: '3.3', answer: 'Comment in a CSS file.', question: 'b', value: 300, option1: 'a: ', q1: 'a: What is //this is a comment// ?', option2: 'b: ', q2: 'b: What is /*this is a comment*/ ?', option3: 'c: ', q3: 'c: What is //this is a comment ?'},
+    '3.3': {answer: 'Comment in a CSS file.', rightQuestion: 'b', value: 300, option1: 'a: ', q1: 'a: What is //this is a comment// ?', option2: 'b: ', q2: 'b: What is /*this is a comment*/ ?', option3: 'c: ', q3: 'c: What is //this is a comment ?'},
 
-// 	{id: '3.4', answer: 'Syntax to change text color.', question: 'a', value: 400, option1: 'a: ', q1: 'a: What is color: ?', option2: 'b: ', q2: 'b: What is font-color: ?', option3: 'c: ', q3: 'c: What is text-color: ?'},
+    '3.4': {answer: 'Syntax to change text color.', rightQuestion: 'a', value: 400, option1: 'a: ', q1: 'a: What is color: ?', option2: 'b: ', q2: 'b: What is font-color: ?', option3: 'c: ', q3: 'c: What is text-color: ?'},
 
-// 	{id: '3.5', answer: 'Syntax for hyperlinks without underline.', question: 'c', value: 500, option1: 'a: ', q1: 'a: What is a{decoration:none;} ?', option2: 'b: ', q2: 'b: What is a{underline:none;} ?', option3: 'c: ', q3: 'c: What is a{text-decoration:none;} '},
+    '3.5': {answer: 'Syntax for hyperlinks without underline.', rightQuestion: 'c', value: 500, option1: 'a: ', q1: 'a: What is a{decoration:none;} ?', option2: 'b: ', q2: 'b: What is a{underline:none;} ?', option3: 'c: ', q3: 'c: What is a{text-decoration:none;} '},
 
-// 	{id: '4.1', answer: 'Our own star.', question: 'c', value: 100, option1: 'a: ', q1: 'a: What is Charlize Theron', option2: 'b: ', q2: 'b: What is the North Star?', option3: 'c: ', q3: 'c: What is the Sun?'},
+    '4.1': {answer: 'Our own star.', rightQuestion: 'c', value: 100, option1: 'a: ', q1: 'a: What is Charlize Theron', option2: 'b: ', q2: 'b: What is the North Star?', option3: 'c: ', q3: 'c: What is the Sun?'},
 
-// 	{id: '4.2', answer: 'Third planet from the sun.', question: 'b', value: 200, option1: 'a: ', q1: 'a: What is Mars?', option2: 'b: ', q2: 'b: What is Earth?', option3: 'c: ', q3: 'c: What is Venus?'},
+    '4.2': {answer: 'Third planet from the sun.', rightQuestion: 'b', value: 200, option1: 'a: ', q1: 'a: What is Mars?', option2: 'b: ', q2: 'b: What is Earth?', option3: 'c: ', q3: 'c: What is Venus?'},
 
-// 	{id: '4.3', answer: 'Our own galaxy.', question: 'b', value: 300, option1: 'a: ', q1: 'a: What is Triangulum?', option2: 'b: ', q2: 'b: What is the Milky Way?', option3: 'c: ', q3: 'c: What is Andromeda?'},
+    '4.3': {answer: 'Our own galaxy.', rightQuestion: 'b', value: 300, option1: 'a: ', q1: 'a: What is Triangulum?', option2: 'b: ', q2: 'b: What is the Milky Way?', option3: 'c: ', q3: 'c: What is Andromeda?'},
 
-// 	{id: '4.4', answer: 'No longer a planet.', question: 'a', value: 400, option1: 'a: ', q1: 'a: What is Pluto?', option2: 'b: ', q2: 'b: What is the Moon?', option3: 'c: ', q3: 'c: What is Neptune?'},
+    '4.4': {answer: 'No longer a planet.', rightQuestion: 'a', value: 400, option1: 'a: ', q1: 'a: What is Pluto?', option2: 'b: ', q2: 'b: What is the Moon?', option3: 'c: ', q3: 'c: What is Neptune?'},
 
-//     {id: '4.5', answer: 'Closest star to the sun.', question: 'c', value: 500, option1: 'a: ', q1: "a: What is Barnard's Star?", option2: 'b: ', q2: 'b: What is Alpha Centauri A?', option3: 'c: ', q3: 'c: What is Proxima Centauri.'}
-// ]
+    '4.5': {answer: 'Closest star to the sun.', rightQuestion: 'c', value: 500, option1: 'a: ', q1: "a: What is Barnard's Star?", option2: 'b: ', q2: 'b: What is Alpha Centauri A?', option3: 'c: ', q3: 'c: What is Proxima Centauri.'}
 }
 
 
