@@ -93,11 +93,13 @@ $('.question').on('click', (event) => {
 
     $postQ1ToModal.on('click', (event) =>  {
         
-        console.log($(event.currentTarget.id))
+        //console.log($(event.currentTarget.id))
         const $rightQuestion = ($squareData.rightQuestion)
         //console.log($rightQuestion)
         if ($rightQuestion === $(event.currentTarget).text()[0]) {
+            console.log('This should be the right question: ')
             keepScore($squareData.value)
+            //console.log('this is the value: ' + $squareData.value)
             alert('Correct!')
         } else {keepScore($squareData.value * -1)
             alert('Sorry, the right answer is ' + $rightQuestion)
@@ -128,6 +130,7 @@ $('.question').on('click', (event) => {
         //console.log($rightQuestion)
         if ($rightQuestion === $(event.currentTarget).text()[0]) {
             keepScore($squareData.value)
+            console.log($squareData)
             alert('Correct!')
         } else {keepScore($squareData.value * -1)
             alert('Sorry, the right answer is ' + $rightQuestion)
@@ -141,7 +144,9 @@ $('.question').on('click', (event) => {
     let score = 0
 
     let keepScore = (points) => {
-        score = score + points 
+        //console.log('1: ' + keepScore)
+        score = score + points
+        //console.log('2: ' + keepScore)
         //console.log(score)
         $('#scoretotal').text(score)
     }
