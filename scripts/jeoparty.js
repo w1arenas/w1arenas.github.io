@@ -2,6 +2,9 @@
 ////////////////////////////////// Look and feel //////////////////////////////////
 // ***** Classes and ID's assignments to divs ******
 
+let score = 0
+console.log('SCORE BEFORE: ' + score)
+
 $(() => { // Start of jQuery logic
 
 // create container
@@ -69,7 +72,12 @@ for (let i = 0; i < 6; i++) {
 
 // ************************* Event listeners *************************
 
+
+
 $('.question').on('click', (event) => {
+
+
+
     // console.log(data[event.currentTarget.id])
     const $squareData = (data[event.currentTarget.id])
     //console.log(event.currentTarget.id)
@@ -91,17 +99,24 @@ $('.question').on('click', (event) => {
 
     // **************** Question and answer logic *********************
 
+
     $postQ1ToModal.on('click', (event) =>  {
         
         //console.log($(event.currentTarget.id))
         const $rightQuestion = ($squareData.rightQuestion)
-        //console.log($rightQuestion)
+        const $rightValue = ($squareData.value)
+        //console.log($rightValue)
+
+        console.log('This should be the right question: ' + $rightQuestion)
+        console.log('this is the value a: ' + $rightValue)
+        console.log('this is the value b: ' + $squareData.value)
+
+        //console.log($(event.currentTarget).text()[0])    
         if ($rightQuestion === $(event.currentTarget).text()[0]) {
-            console.log('This should be the right question: ')
-            keepScore($squareData.value)
-            //console.log('this is the value: ' + $squareData.value)
+            keepScore($rightValue)
             alert('Correct!')
         } else {keepScore($squareData.value * -1)
+
             alert('Sorry, the right answer is ' + $rightQuestion)
         }
         closeModal()
@@ -110,9 +125,7 @@ $('.question').on('click', (event) => {
 
     $postQ2ToModal.on('click', (event) =>  {
         $(event.currentTarget)
-        //console.log($(event.currentTarget).text()[0])
         const $rightQuestion = ($squareData.rightQuestion)
-        //console.log($rightQuestion)
         if ($rightQuestion === $(event.currentTarget).text()[0]) {
             keepScore($squareData.value)
             alert('Correct!')
@@ -125,12 +138,9 @@ $('.question').on('click', (event) => {
 
     $postQ3ToModal.on('click', (event) =>  {
         $(event.currentTarget)
-        //console.log($(event.currentTarget).text()[0])
         const $rightQuestion = ($squareData.rightQuestion)
-        //console.log($rightQuestion)
         if ($rightQuestion === $(event.currentTarget).text()[0]) {
             keepScore($squareData.value)
-            console.log($squareData)
             alert('Correct!')
         } else {keepScore($squareData.value * -1)
             alert('Sorry, the right answer is ' + $rightQuestion)
@@ -141,16 +151,25 @@ $('.question').on('click', (event) => {
 
 //***********************  Scoreboard logic ***********************
 
-    let score = 0
+
 
     let keepScore = (points) => {
-        //console.log('1: ' + keepScore)
-        score = score + points
-        //console.log('2: ' + keepScore)
+
+        console.log('Points awarded: ' + points)
+        // console.log('*******************************')
+        console.log('SCORE DURING: ' + score)
+        // console.log('1: ' + points)
+
+        score += points
+    
         //console.log(score)
         $('#scoretotal').text(score)
+
+        console.log('SCORE DURING AFTER: ' + score)
+
     }
- 
+
+
 // ************************** Modal logic ***************************
 
     $('#modal-textbox').append($postQ1ToModal)
