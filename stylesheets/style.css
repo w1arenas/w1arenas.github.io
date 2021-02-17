@@ -1,6 +1,5 @@
 * {
     color: #0015A0;
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -190,15 +189,12 @@ question:hover {
 .modal {
     display: none;
     position: fixed;
-    /* places modal on top of the page */
     z-index: 1;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    /* elevator if model is too small for text */
     overflow: auto;
-    /* last index is opacity. Darkens the background */
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -208,7 +204,6 @@ question:hover {
     /* first index controls how far it goes down. second index is left and right margins (centers it on the horizontal) */
     margin: 20% 30px;
     padding: 2%;
-    /* line-height: 120%; */
     width: 70%;
     border-radius: 10px;
     background-color: #0015A0;

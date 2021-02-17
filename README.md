@@ -1,9 +1,11 @@
-
-
+Source code found at: 
 # w1arenas.github.io
 
+Live site. You can play the game at: 
+http://madly-thrill.surge.sh
 
-For the game Jeopardy:
+***************************** Planning stage - Pseudo Code ****************************
+For the game Jeoparty:
 Game environment:
     Set up the game board of five columns and eight rows.
     Decide whether to use tables or divs.
@@ -22,8 +24,6 @@ Game funcionality
     As the answers are selected, they will be made unavailable for further selection.
     When all answers are used, the game will stop and annouce the final score.
 
-Live site: http://walterarenas.rf.gd/
-
 Technologies Used
     - Languages: HTML5, CSS3, Javascript, jQuery
     - Change control: GitHub
@@ -41,7 +41,7 @@ Future Development
     - Sounds
     - Visual effects
     - Randomizing of categories and pool of answers and questions
-    - Player v. plater with separate scoreboards
+    - Player v. player with separate scoreboards
     - Timer
     - Reset button
     - Sharper look
