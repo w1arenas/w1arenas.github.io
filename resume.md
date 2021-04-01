@@ -1,3 +1,5 @@
+| [Home](README.md) | [About Me](about.md) | [My Resume](resume.md) | [My LinkedIn Page ](https://www.linkedin.com/in/walter-arenas/) |
+
 # WALTER ARENAS
 ### Software Engineer - Stuart, FL
 #### warenas@gmail.com
