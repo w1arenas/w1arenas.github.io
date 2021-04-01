@@ -1,4 +1,4 @@
-[About Me](about.md)
+[About Me](about.md)    [My Resume](resume.md)
 
 ## Welcome to my Website!
 
