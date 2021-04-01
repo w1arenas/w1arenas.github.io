@@ -70,6 +70,6 @@ Engineering, Physics and Mathematics
 Trained in Project Management Institute standards
 ### Lotus Notes, Administrator Certification
 ### Microsoft Windows Certified Professional, NT 
-### NOVELL CNE ADMINISTRATION - Certified Novell Engineer
+### Novell CNE Administration - Certified Novell Engineer
 
 
