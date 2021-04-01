@@ -7,4 +7,4 @@ Hi! My name is Walter Arenas. This site showcases my professional profile as a s
 
 Thank you for visiting!
 
-<img src="./assets/images/headshot-walter.jpg" width="150">
+<img src="./assets/images/walter.png" width="150">
