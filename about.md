@@ -1,4 +1,4 @@
-[Home](README.md)
+| [Home](README.md) | [About Me](about.md) | [My Resume](resume.md) | [My LinkedIn Page ](https://www.linkedin.com/in/walter-arenas/) |
 
 # About Me
 
