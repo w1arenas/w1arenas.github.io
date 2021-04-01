@@ -1,26 +1,5 @@
-navigation:
-
-  - document: README.md
-
-    label: Home
-
-  - document: about.md
-
-    label: About Me
-
-  - document: resume.md
-
-    label: My Resume
-
-  - document: https://www.linkedin.com/in/walter-arenas/
-
-    label: My LinkedIn Page
-
-  - document: release_notes_doc
-
-    label: Release Notes
-
 | [Home](README.md) | [About Me](about.md) | [My Resume](resume.md) | [My LinkedIn Page ](https://www.linkedin.com/in/walter-arenas/) |
+|:----:|:----:|:----:|:----:|
 
 ## Welcome to my Website!
 
