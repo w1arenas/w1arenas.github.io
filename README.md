@@ -3,7 +3,7 @@
 
 ## Welcome to my Website!
 
-Hi! My name is Walter Arenas. This site showcases my professional profile as a software engineer, including my projects, [resume](resume.md), and [bio](about.md).
+Hi! My name is Walter Arenas. This site showcases my professional profile as a software engineer, including my [projects](projects.md), [resume](resume.md), and [bio](about.md).
 
 Thank you for visiting!
 
