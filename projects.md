@@ -5,7 +5,7 @@
 ### Jeoparty
 My first official project. A simple, front-end, Jeopardy-type game.
 
-[Jeoparty site](projects.md)
+[Jeoparty site](http://madly-thrill.surge.sh/)
 
 ### My Council Shoulder Patch (CSP) Collection
 A full-stack project showcasing my collection of CSPs.
