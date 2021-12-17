@@ -2,6 +2,10 @@
 
 # About Me
 
-My name is Walter Arenas, I am a full-stack software engineer that uses JavaScript, React and Python to develop applications that talk to SQL and non-relational databases.  My strong  background in sales and project management, paired with my education as an electrical engineer have provided me with a unique perspective in problem-solving and customer satisfaction, which allows me to provide the end user with a pleasant and rewarding experience.
+My name is Walter Arenas, I am a full-stack software engineer that uses JavaScript, React and Python to develop applications that talk to relational and non-relational databases.  
 
-I am a Peruvian native, bilingual (English/Spanish) with intermediate Portuguese and Italian. My extensive international experience has allowed me to travel the world for over 20 years. This involvement has taught me the importance of considering cultural differences to achieve success in international business.
+Until recently, I performed as a successful international sales director working with airports. CoVid took good care of that business and provided me with the wonderful opportunity to pivot into a career that I always dreamed of. What diferentiates me from similar candidates is that I am a proven, driven, seasoned professional that will bring instant dedication and discipline to the job at hand with a unique and fresh perspective of what the end user needs. My additional background in project management, paired with my education as an electrical engineer, provides me me with a unique perspective in problem-solving and customer satisfaction, whether that customer is my employer or an end user.
+
+I look forward to becoming part of your success!
+
+-Walter
